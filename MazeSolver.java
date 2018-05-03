@@ -1,5 +1,5 @@
 /*Maze Solver Program
- * This Program imports a text file containing a maze and finds a way from Start to Finish.
+ * This Program imports a text file containing a maze and finds a way from Start (Top Left Corner) to Finish (Bottom Right Corner).
  * Display Legend:
  * "0" - Wall Block
  * "1" - Able to Walk Path
