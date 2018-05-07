@@ -3,7 +3,6 @@
  * Display Legend:
  * "0" - Wall Block
  * "1" - Able to Walk Path
- * "4" - Wall Block discovered by Program
  * "8" - The Path that the User should take to reach the end of the Maze. 
  * Please be advised that this solution may not be the optimal solution but it is a viable solution.
  * Written by Jian An Chiang
@@ -99,7 +98,6 @@ class Maze{
 						longArray[new_position]=8; //Once we found the final position, it will return true and we can just keep returning true and reassign the positions to 8.
 					}
 				}else if (longArray[new_position]==0 && (new_position+1)%n!=0 && visited[new_position]==false){
-					longArray[new_position]=4; //If the new position has "0", we can just label that as un-passable block, "4".
 				}else{}
 			}else if (direction==1){//Go Right
 				new_position+=1;
@@ -111,7 +109,6 @@ class Maze{
 						longArray[new_position]=8;
 					}
 				}else if (longArray[new_position]==0 && (new_position+1)%n!=0 && visited[new_position]==false){
-					longArray[new_position]=4;
 				}else{}
 			}else if (direction==2){//Go Top
 				new_position-=n;
@@ -123,7 +120,6 @@ class Maze{
 						longArray[new_position]=8;
 					}
 				}else if (longArray[new_position]==0 && (new_position+1)%n!=0 && visited[new_position]==false){
-					longArray[new_position]=4;
 				}else{}
 			}else if(direction==3){//Go Bottom
 				new_position+=n;
@@ -136,7 +132,6 @@ class Maze{
 						longArray[new_position]=8;
 					}
 				}else if (longArray[new_position]==0 && (new_position+1)%n!=0 && visited[new_position]==false){
-					longArray[new_position]=4;
 				}else{}
 			}else{}
 			new_position=current_position; //Reassign new position to be current position since it was changed in the if/else statements.
