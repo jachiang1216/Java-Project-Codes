@@ -1,5 +1,5 @@
 # My Java Project Programs
-#These are a list of programs that I have written in Java during my own leisure time.
+These are a list of programs that I have written in Java during my own leisure time.
 Here is the List:
 1. PalindromeDetector
 2. CreditCardValidation
